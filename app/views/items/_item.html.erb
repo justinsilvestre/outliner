@@ -1,0 +1,6 @@
+<li>
+	[<%= item.parent.nil? ? nil : item.parent.place %>][<%= item.place %>] <%= item.content %> : <%= item.note %>
+	<% unless item.children.empty? %>
+		<ul><%= render item.children %></ul>
+	<% end %>
+</li>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Outliner</title>
+  <script id="item-template" type="text/template">
+  hey
+{{ content }}
+
+</script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<% flash.each do |type, message| %>
+	<%= message %>
+<% end %>
+
+<%= yield %>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+place: <%= @item.place unless @item.placing.nil? %>
+
+<p>
+  <strong>Content:</strong>
+  <%= @item.content %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @item.note %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @item.completed %>
+</p>
+
+<p>
+  <strong>Expanded:</strong>
+  <%= @item.expanded %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

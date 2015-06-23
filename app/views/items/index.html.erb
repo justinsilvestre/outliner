@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Items</h1>
+
+
+
+
+<ul id="outline">
+</ul>
+
+
+<ul>
+<% Placing.top_level.each do |placing| %>
+  <%= render placing.item %>
+<% end %>
+</ul>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Content</th>
+      <th>Note</th>
+      <th>Completed</th>
+      <th>Expanded</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @items.each do |item| %>
+      <tr>
+        <td><%= item.content %></td>
+        <td><%= item.note %></td>
+        <td><%= item.completed %></td>
+        <td><%= item.expanded %></td>
+        <td><%= link_to 'Show', item %></td>
+        <td><%= link_to 'Edit', edit_item_path(item) %></td>
+        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'New', new_child_path(item) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Item', new_item_path %>

@@ -1,0 +1,22 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  content: this is the first top-level item
+  note: MyText
+  completed: false
+  expanded: false
+  id: 1
+
+two:
+  content: second top-level item
+  note: MyText
+  completed: false
+  expanded: false
+  id: 2
+
+three:
+  content: third top-level item
+  note: MyText
+  completed: false
+  expanded: true
+  id: 3

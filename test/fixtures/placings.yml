@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_id: nil
+  place: 1
+  item_id: 1
+
+two:
+  parent_id: nil
+  place: 2
+  item_id: 2
+
+three:
+  parent_id: nil
+  place: 3
+  item_id: 3
+
+one_child_one:
+  parent_id: 1
+  place: 1
+  item_id: 4
